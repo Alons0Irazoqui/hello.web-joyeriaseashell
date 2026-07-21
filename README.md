@@ -87,13 +87,20 @@ Puedes iterar sobre el proyecto dándole instrucciones a Claude Code las veces q
 
 ## Checklist
 
-- [ ] Crear un logotipo simple (wordmark) con el nombre "Seashell" usando la tipografía y paleta definidas
-- [ ] Si se recibe un logo con fondo más adelante, removerle el fondo antes de integrarlo
-- [ ] Seleccionar máximo 30 fotos de `imagenes/` (~20 de joyería + ~6 de bolsos/carteras) y descartar el resto
-- [ ] Optimizar/comprimir las fotos seleccionadas para web
-- [ ] Aplicar la paleta de colores y tipografía definidas sobre la plantilla base
-- [ ] Implementar preloader (spinner + logo)
-- [ ] Implementar animaciones activadas por scroll
-- [ ] Implementar animación tipográfica en el título del hero (máquina de escribir, cambio de color u otro efecto)
-- [ ] Verificar responsividad y velocidad de carga tras optimizar imágenes
+- [x] Crear un logotipo simple (wordmark) con el nombre "Seashell" usando la tipografía y paleta definidas
+- [ ] Si se recibe un logo con fondo más adelante, removerle el fondo antes de integrarlo *(pendiente: no se ha recibido logo del cliente)*
+- [x] Seleccionar máximo 30 fotos de `imagenes/` (~20 de joyería + ~6 de bolsos/carteras) y descartar el resto — se usaron 31: 20 joyería, 4 bolsos/carteras/cinturón y 7 perfumes (la carpeta "bolsos y carteras" resultó contener mayormente fotos de perfumería real, así que se integró esa línea de producto también)
+- [x] Optimizar/comprimir las fotos seleccionadas para web (~13.7MB → ~2.1MB en 31 imágenes)
+- [x] Aplicar la paleta de colores y tipografía definidas sobre la plantilla base
+- [x] Implementar preloader (spinner + logo)
+- [x] Implementar animaciones activadas por scroll
+- [x] Implementar animación tipográfica en el título del hero (máquina de escribir + cambio de color)
+- [x] Verificar responsividad y velocidad de carga tras optimizar imágenes
 - [ ] Iterar con Claude Code hasta lograr el resultado deseado
+
+### Pendientes del cliente (no se inventaron datos)
+
+- **Número de WhatsApp real**: se dejó un placeholder (`52...0000000000`) marcado con `TODO(cliente)` en 4 lugares del código (`index.html`: barra de navegación, hero, sección Mayoreo, sección Contacto, botón flotante, footer, y `js/main.js`). Buscar `TODO(cliente)` para localizarlos todos.
+- **Enlace de Facebook**: se dejó como referencia de texto sin URL activa (también marcado `TODO(cliente)`), ya que no se proporcionó el enlace de la página.
+- **Dirección, horario y mapa**: se omitieron intencionalmente — el negocio no tiene dirección física ni horario fijo, así que no se fabricó esa información.
+- **Sección de opiniones de clientes**: no se incluyó porque no se recibieron reseñas reales; se reemplazó por una sección "Para Emprendedores" (mayoreo/reventa), que sí está respaldada por la información del negocio.
