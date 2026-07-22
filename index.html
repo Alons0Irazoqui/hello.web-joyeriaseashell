@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seashell | Joyería y Accesorios en Plata 925 (9.25), Chapa de Oro y Oro Laminado — Menudeo y Mayoreo</title>
+  <meta name="description" content="Seashell: joyería y accesorios en plata 925 (9.25), acero con chapa de oro y oro laminado, bolsos, carteras, perfumes y accesorios. Compra al menudeo o surte tu negocio al mayoreo. Cotiza directo por WhatsApp.">
+  <meta name="keywords" content="joyería plata 925, plata 9.25, acero chapa de oro, oro laminado, joyería mayoreo, bolsos y carteras, perfumes, accesorios, Seashell">
+  <meta property="og:title" content="Seashell | Joyería y Accesorios en Plata 925 (9.25) — Menudeo y Mayoreo">
+  <meta property="og:description" content="Plata 925 (9.25), chapa de oro, oro laminado, bolsos, carteras, perfumes y accesorios. Precios de menudeo y mayoreo para revendedores.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0B0D">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <canvas class="loader-particles" data-particles="34" aria-hidden="true"></canvas>
+    <div class="loader-burst" aria-hidden="true"></div>
+    <div class="loader-ring" aria-hidden="true"></div>
+    <div class="loader-inner">
+      <div class="loader-mark">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path class="shell-path" pathLength="1" d="M24 41C12 34 8 24 9 15C9.3 13 10.5 12 24 12C37.5 12 38.7 13 39 15C40 24 36 34 24 41Z" stroke-linejoin="round"/>
+          <path class="shell-rib" d="M24 41V12" style="animation-delay:1.6s"/>
+          <path class="shell-rib" d="M24 41L15 14" style="animation-delay:1.7s"/>
+          <path class="shell-rib" d="M24 41L33 14" style="animation-delay:1.75s"/>
+          <path class="shell-rib" d="M24 41L10 20" style="animation-delay:1.8s"/>
+          <path class="shell-rib" d="M24 41L38 20" style="animation-delay:1.85s"/>
+          <path d="M24 12V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="loader-word">Sea<em>shell</em></div>
+      <div class="loader-progress-row">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        <span class="loader-percent" id="loader-percent">0%</span>
+      </div>
+      <span class="loader-text">Cargando catálogo…</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Seashell — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 41C12 34 8 24 9 15C9.3 13 10.5 12 24 12C37.5 12 38.7 13 39 15C40 24 36 34 24 41Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M24 41V12M24 41L15 14M24 41L33 14M24 41L10 20M24 41L38 20" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".8"/>
+              <path d="M24 12V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="nav-logo-copy">Sea<em>shell</em></div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Catálogo</a></li>
+            <li><a href="#proceso">Cómo comprar</a></li>
+            <li><a href="#mayoreo">Mayoreo</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- TODO(cliente): actualizar con el número real de WhatsApp -->
+        <a href="https://wa.me/520000000000?text=Hola%2C%20vi%20su%20cat%C3%A1logo%20Seashell%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+           target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta btn-wa" style="font-size:13px; padding:12px 26px;">
+          <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu-backdrop"></div>
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué elegirnos</a>
+      <a href="#ambientes">Catálogo</a>
+      <a href="#proceso">Cómo comprar</a>
+      <a href="#mayoreo">Mayoreo</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/520000000000" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" aria-hidden="true" style="--hero-img:url('/assets/img/hero/hero-collar-planeta.jpg')" data-parallax="0.2"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" data-particles="70" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Joyería &amp; Accesorios · Menudeo y Mayoreo
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Joyería y accesorios,</span></span>
+            <span class="line"><span class="accent">precios de mayoreo.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Piezas en <strong>plata 925 (9.25)</strong>, acero con chapa de oro y oro laminado — además de bolsos, carteras, perfumes y accesorios. Compra al menudeo para ti, o al mayoreo para revender.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#ambientes" class="btn-gold">
+              Ver Catálogo
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="https://wa.me/520000000000?text=Hola%2C%20vi%20su%20cat%C3%A1logo%20Seashell%20y%20me%20gustar%C3%ADa%20cotizar."
+               target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <i class="fa-brands fa-whatsapp" style="font-size:16px; color:var(--gold);"></i>
+              Cotizar por WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Ventajas">
+            <div class="trust-item">
+              <i class="fa-solid fa-gem"></i>
+              Plata 925 (9.25) &amp; Acero Dorado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-scale-balanced"></i>
+              Menudeo y Mayoreo
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              Atención por WhatsApp
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Por qué elegirnos
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia Seashell</div>
+            <h2 class="why-quote" id="why-heading" data-split-title>
+              Cada pieza cuenta una historia…
+              <em>y la tuya empieza aquí.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos materiales de calidad, catálogo amplio y atención directa para que comprar joyería — para ti o para tu negocio — sea simple y confiable.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <h3>Calidad en Cada Pieza</h3>
+            <p>Plata 925 (9.25), acero con chapa de oro y oro laminado, seleccionados por su durabilidad y acabado.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <h3>Menudeo y Mayoreo</h3>
+            <p>Compra una pieza para ti o surte tu negocio con condiciones especiales para reventa.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <h3>Catálogo Completo</h3>
+            <p>Joyería, bolsos, carteras, perfumes, cinturones, gorras y más accesorios en un solo lugar.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <h3>Atención Directa</h3>
+            <p>Hablas con nosotros por WhatsApp, sin intermediarios ni distribuidores de por medio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Categorías
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Explora por categoría</div>
+            <h2 class="section-title" id="amb-heading" data-split-title>
+              No todo es igual,<br>
+              <span class="gold">elige tu línea favorita</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Tres líneas pensadas para distintos estilos, ocasiones y presupuestos.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Con qué empezamos?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <div class="amb-card reveal">
+            <img class="amb-img" src="/assets/img/joyeria/amb-oro-conjunto-trebol.jpg"
+              alt="Conjunto dorado de collar, pulsera y aretes — línea de acero con chapa de oro" loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(201,169,106,.15); border-color:rgba(231,211,168,.4);" aria-hidden="true">
+                <i class="fa-solid fa-crown" style="color:var(--gold-light);"></i>
+              </div>
+              <h3>Oro &amp; Acero Dorado</h3>
+              <p>Chapa de oro y oro laminado con acabado brillante, ideales para uso diario y de fiesta.</p>
+              <div class="amb-temp">Colección Dorada</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img" src="/assets/img/joyeria/grid-anillos-opalo.jpg"
+              alt="Anillos de plata 925 (9.25) con piedra de ópalo en distintos colores" loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(199,201,204,.15); border-color:rgba(199,201,204,.4);" aria-hidden="true">
+                <i class="fa-solid fa-gem" style="color:var(--silver);"></i>
+              </div>
+              <h3>Plata 925 (9.25)</h3>
+              <p>Anillos, pulseras y aretes en plata ley 925 (9.25), con acabado plateado premium.</p>
+              <div class="amb-temp">Colección Plata</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img" src="/assets/img/bolsos/amb-carteras-dama.jpg"
+              alt="Carteras de mano de dama en varios colores" loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(31,138,148,.15); border-color:rgba(53,180,192,.4);" aria-hidden="true">
+                <i class="fa-solid fa-bag-shopping" style="color:var(--teal-light);"></i>
+              </div>
+              <h3>Bolsos &amp; Accesorios</h3>
+              <p>Carteras, bolsos, cinturones y perfumes para completar tu estilo.</p>
+              <div class="amb-temp">Accesorios</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="catalogo-more reveal">
+          <span class="cm-label">También en catálogo:</span>
+          <span class="cm-chip">Bandas de Boda</span>
+          <span class="cm-chip">Gorras</span>
+          <span class="cm-chip">Peluches</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO — Catálogo (piezas reales)
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+
+        <div class="producto-hdr reveal">
+          <div class="label">Piezas Destacadas</div>
+          <h2 class="section-title" id="prod-heading" data-split-title>
+            Selección de nuestro <span class="gold">catálogo disponible</span>
+          </h2>
+          <p class="producto-lead">
+            Una muestra real de lo que encuentras en Seashell. Escríbenos por WhatsApp para ver el catálogo completo y disponibilidad al momento.
+          </p>
+        </div>
+
+        <div class="product-grid" role="list">
+
+          <div class="product-card reveal" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-anillos-opalo.jpg" alt="Anillos de plata con óvalo de ópalo en distintos colores" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Anillos Plata &amp; Ópalo</h3><p>Plata 925 (9.25) con piedra de ópalo en varios colores.</p></div>
+          </div>
+
+          <div class="product-card reveal d1" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-anillos-sol.jpg" alt="Anillos en forma de sol con centro de ópalo" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Anillos Sol</h3><p>Diseño de sol con centro de ópalo de colores.</p></div>
+          </div>
+
+          <div class="product-card reveal d2" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-anillos-tortuga.jpg" alt="Anillos con diseño de tortuga e incrustación de ópalo" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Anillos Tortuga</h3><p>Diseño de tortuga con incrustación de ópalo.</p></div>
+          </div>
+
+          <div class="product-card reveal d3" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-aretes-colgantes.jpg" alt="Aretes colgantes con piedras de colores variados" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Aretes Colgantes</h3><p>Piedras de colores variados, para lucir o combinar.</p></div>
+          </div>
+
+          <div class="product-card reveal" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-collar-luna-estrella.jpg" alt="Collar dorado con dije de luna y estrella" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Collar Luna &amp; Estrella</h3><p>Cadena dorada tipo cordón con dije celeste.</p></div>
+          </div>
+
+          <div class="product-card reveal d1" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-collar-guadalupe.jpg" alt="Collar dorado con dije de la Virgen de Guadalupe" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Collar Guadalupe</h3><p>Dije ovalado de la Virgen de Guadalupe.</p></div>
+          </div>
+
+          <div class="product-card reveal d2" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-conjunto-mariposa.jpg" alt="Conjunto dorado de collar y aretes con diseño de mariposa" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Conjunto Mariposa</h3><p>Collar y aretes a juego, diseño de mariposa.</p></div>
+          </div>
+
+          <div class="product-card reveal d3" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-conjunto-opalo-azul.jpg" alt="Conjunto de collar y aretes de plata con ópalo azul" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Conjunto Ópalo Azul</h3><p>Plata con ópalo en tono azul/verde nácar.</p></div>
+          </div>
+
+          <div class="product-card reveal" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-pulseras-tenis.jpg" alt="Pulseras estilo tenis con piedras de colores" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Pulseras Tenis</h3><p>Estilo tenis con piedras de colores variados.</p></div>
+          </div>
+
+          <div class="product-card reveal d1" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/joyeria/grid-pulsera-malaquita.jpg" alt="Pulsera con piedra de malaquita verde" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Pulsera Malaquita</h3><p>Piedra de malaquita verde engarzada.</p></div>
+          </div>
+
+          <div class="product-card reveal d2" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/bolsos/grid-cartera-hombre.jpg" alt="Cartera de piel color café para caballero" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Cartera de Caballero</h3><p>Piel color café, presentación en caja de regalo.</p></div>
+          </div>
+
+          <div class="product-card reveal d3" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/bolsos/grid-cinturon.jpg" alt="Cinturón de piel negro con hebilla plateada" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Cinturón de Piel</h3><p>Negro con hebilla plateada.</p></div>
+          </div>
+
+        </div>
+
+        <div class="perfumeria-hdr reveal">
+          <h3>Perfumería</h3>
+          <span>Fragancias para complementar tu pedido</span>
+        </div>
+
+        <div class="product-grid product-grid--compact" role="list">
+          <div class="product-card reveal" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-classic5paris.jpg" alt="Perfume Classic 5 Paris en frasco cuadrado" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Classic 5 Paris</h3></div>
+          </div>
+          <div class="product-card reveal d1" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-valiantmen.jpg" alt="Perfume Valiant Men en frasco negro texturizado" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Valiant Men</h3></div>
+          </div>
+          <div class="product-card reveal d2" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-salvang.jpg" alt="Perfume Salvang Pour Homme en frasco azul oscuro" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Salvang Pour Homme</h3></div>
+          </div>
+          <div class="product-card reveal d3" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-luckymillionaire.jpg" alt="Perfume Lucky Millionaire en frasco oscuro con tapa dorada" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Lucky Millionaire</h3></div>
+          </div>
+          <div class="product-card reveal" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-s9pourfemme.jpg" alt="Perfume S9 Pour Femme en frasco dorado" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>S9 Pour Femme</h3></div>
+          </div>
+          <div class="product-card reveal d1" role="listitem">
+            <div class="product-card-img"><img src="/assets/img/perfumes/perfume-valiame.jpg" alt="Perfume Valiame en frasco rosa facetado" loading="lazy" decoding="async"></div>
+            <div class="product-card-body"><h3>Valiame</h3></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo comprar
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo Comprar</div>
+          <h2 class="section-title" id="proceso-heading" data-split-title>
+            Simple, directo y <span class="gold">pensado para ti</span>
+          </h2>
+          <p>Ya sea que quieras una pieza para ti o surtir tu negocio, el proceso es el mismo de fácil.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Explora el Catálogo</h3>
+            <p>Descubre piezas en plata 925 (9.25), chapa de oro, oro laminado y accesorios en nuestro catálogo.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Elige Menudeo o Mayoreo</h3>
+            <p>Compra una pieza para ti, o surte tu negocio con precios especiales de reventa.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Coordina por WhatsApp</h3>
+            <p>Escríbenos, confirma tu pedido y coordinamos los detalles directamente contigo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos clave de Seashell">
+      <canvas id="stats-canvas" class="particle-layer" data-particles="30" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="925" aria-label="925">0</div>
+            <div class="stat-lbl">Ley de la plata (9.25)<br>en cada pieza</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="11" data-suffix="+" aria-label="Más de 11">0</div>
+            <div class="stat-lbl">Categorías<br>en catálogo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="2" aria-label="2">0</div>
+            <div class="stat-lbl">Modalidades:<br>menudeo y mayoreo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100%">0</div>
+            <div class="stat-lbl">Atención<br>personalizada</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MAYOREO — Para emprendedores
+    ══════════════════════════════════════════════════ -->
+    <section id="mayoreo" class="bg-parallax-section" aria-labelledby="mayoreo-heading">
+      <div class="bg-parallax" style="background-image:url('/assets/img/joyeria/mayoreo-cadena-figaro.jpg')" data-parallax="0.3" aria-hidden="true"></div>
+      <div class="bg-parallax-overlay" aria-hidden="true"></div>
+      <canvas class="particle-layer" data-particles="26" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="mayoreo-wrap reveal">
+          <div class="label" style="justify-content:center;">Para Emprendedores</div>
+          <h2 id="mayoreo-heading" data-split-title>Convierte tu pasión en <em>negocio</em></h2>
+          <p>
+            Muchos de nuestros clientes compran para revender. Si buscas iniciar o hacer crecer tu negocio,
+            en Seashell encuentras precios de mayoreo en joyería y accesorios, con atención directa para que surtas tu catálogo sin complicaciones.
+          </p>
+          <div class="mayoreo-badges">
+            <span class="mayoreo-badge"><i class="fa-solid fa-tags"></i> Precios de mayoreo</span>
+            <span class="mayoreo-badge"><i class="fa-solid fa-layer-group"></i> Catálogo variado</span>
+            <span class="mayoreo-badge"><i class="fa-solid fa-store"></i> Ideal para reventa</span>
+            <span class="mayoreo-badge"><i class="fa-brands fa-whatsapp"></i> Pedidos por WhatsApp</span>
+          </div>
+          <a href="https://wa.me/520000000000?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20de%20precios%20de%20mayoreo%20Seashell."
+             target="_blank" rel="noopener noreferrer" class="btn-gold">
+            Pide Información de Mayoreo
+            <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Galería</div>
+          <h2 class="section-title" id="gal-heading" data-split-title>
+            Piezas de nuestro <span class="gold">catálogo</span>
+          </h2>
+          <p>Fotografías reales de piezas disponibles en Seashell.</p>
+        </div>
+
+        <div class="galeria-grid">
+
+          <div class="gal-item reveal">
+            <img src="/assets/img/joyeria/gal-conjunto-trebol-1.jpg" alt="Conjunto dorado de collar, pulsera y aretes con dijes de trébol" loading="lazy" decoding="async">
+            <div class="gal-cap">Conjunto dorado con dije de trébol</div>
+          </div>
+          <div class="gal-item reveal d1">
+            <img src="/assets/img/joyeria/gal-collar-cruz.jpg" alt="Collar dorado con dije de cruz cubierto de cristales" loading="lazy" decoding="async">
+            <div class="gal-cap">Collar con dije de cruz</div>
+          </div>
+          <div class="gal-item reveal d2">
+            <img src="/assets/img/perfumes/gal-perfume-robot.jpg" alt="Perfume en frasco con forma de robot" loading="lazy" decoding="async">
+            <div class="gal-cap">Perfume edición Robot</div>
+          </div>
+          <div class="gal-item reveal">
+            <img src="/assets/img/joyeria/gal-collar-estrella.jpg" alt="Collar dorado con dije de estrella de cuatro puntas" loading="lazy" decoding="async">
+            <div class="gal-cap">Collar con dije de estrella</div>
+          </div>
+          <div class="gal-item reveal d1">
+            <img src="/assets/img/bolsos/gal-mini-carteras.jpg" alt="Mini carteras acolchadas con dije de pompón en varios colores" loading="lazy" decoding="async">
+            <div class="gal-cap">Mini carteras acolchadas</div>
+          </div>
+          <div class="gal-item reveal d2">
+            <img src="/assets/img/joyeria/gal-collar-corazon.jpg" alt="Collar dorado de cadena fina con dije de corazón" loading="lazy" decoding="async">
+            <div class="gal-cap">Collar dije de corazón</div>
+          </div>
+          <div class="gal-item reveal">
+            <img src="/assets/img/joyeria/gal-collar-guadalupe-2.jpg" alt="Collar dorado con dije circular de la Virgen de Guadalupe" loading="lazy" decoding="async">
+            <div class="gal-cap">Collar Virgen de Guadalupe</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading" data-split-title>
+            Hablemos de tu <span class="gold">próximo pedido</span>
+          </h2>
+          <p>Escríbenos y cotizamos al instante.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <div class="contact-info" style="--contact-img:url('/assets/img/joyeria/contact-conjunto-corazon.jpg')">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Compra al menudeo o mayoreo directamente con nosotros, sin intermediarios.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <!-- TODO(cliente): actualizar con el número real de WhatsApp -->
+                  <a href="https://wa.me/520000000000" target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Facebook</h4>
+                  <!-- TODO(cliente): agregar enlace a la página de Facebook -->
+                  <p>Síguenos y descubre nuestras publicaciones más recientes.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Menudeo y Mayoreo</h4>
+                  <p>Compra una pieza o surte tu negocio — pregúntanos por precios de mayoreo.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicita tu Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Compra al menudeo</option>
+                    <option>Precios de mayoreo</option>
+                    <option>Plata 925 (9.25)</option>
+                    <option>Acero con chapa de oro / Oro laminado</option>
+                    <option>Bolsos, carteras o accesorios</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos qué buscas</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe la pieza, cantidad o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp con tu mensaje ya escrito, listo para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-logo">
+          <div class="footer-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 41C12 34 8 24 9 15C9.3 13 10.5 12 24 12C37.5 12 38.7 13 39 15C40 24 36 34 24 41Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M24 41V12M24 41L15 14M24 41L33 14M24 41L10 20M24 41L38 20" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".8"/>
+              <path d="M24 12V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span>Sea<em>shell</em></span>
+        </div>
+
+        <p class="footer-tagline">
+          Joyería y accesorios en plata 925 (9.25), acero con chapa de oro y oro laminado — al menudeo y al mayoreo.
+        </p>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="#why">Por qué elegirnos</a></li>
+              <li><a href="#ambientes">Catálogo</a></li>
+              <li><a href="#proceso">Cómo comprar</a></li>
+              <li><a href="#mayoreo">Mayoreo</a></li>
+              <li><a href="#galeria">Galería</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Categorías</h5>
+            <ul>
+              <li><a href="#ambientes">Plata 925 (9.25)</a></li>
+              <li><a href="#ambientes">Oro &amp; Acero Dorado</a></li>
+              <li><a href="#ambientes">Bolsos &amp; Carteras</a></li>
+              <li><a href="#producto">Perfumería</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <!-- TODO(cliente): actualizar con el número real de WhatsApp -->
+          <a href="https://wa.me/520000000000" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <!-- TODO(cliente): agregar enlace a la página de Facebook -->
+          <a href="#" class="footer-soc" aria-label="Facebook" onclick="return false;">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Seashell. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <!-- TODO(cliente): actualizar con el número real de WhatsApp -->
+  <a href="https://wa.me/520000000000?text=Hola%2C%20visit%C3%A9%20su%20cat%C3%A1logo%20Seashell%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
